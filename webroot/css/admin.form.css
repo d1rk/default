@@ -13,7 +13,11 @@
 		}
 
 	div.items div.item.hover {
-		background: #E5ECF9;
+		background-color: #E5ECF9;
+		}
+
+	div.items div.item.active {
+		background-color: #FDEEB7;
 		}
 
 div.input {

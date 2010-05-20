@@ -17,6 +17,10 @@ $btnbar = (isset($btnbar))
 	? $btnbar
 	: '';
 
+$btnbar = (empty($btnbar) && !empty($this->Nav->cNavis['Primary']))
+	? $this->Nav->show('Primary')
+	: '';
+
 $width = (isset($width))
 	? $width
 	: 'full';
@@ -31,7 +35,7 @@ echo $this->Grid->open();
 
 		if (!empty($this->_crumbs) || !empty($btnbar))
 		{
-			echo $this->Html->div('bc');
+			echo $this->Html->div('bar');
 				echo (!empty($btnbar) && is_string($btnbar))
 					? $this->Html->div('btnbar', $btnbar)
 					: null;
@@ -41,7 +45,7 @@ echo $this->Grid->open();
 					: null;
 
 				echo (!empty($this->_crumbs))
-					? $this->Html->nestedList($this->getCrumbs())
+					? $this->Html->nestedList($this->getCrumbs(), array('class' => 'bc'))
 					: null;
 
 			echo $this->Html->tag('/div'); //div.bc
@@ -71,7 +75,7 @@ echo $this->Grid->open();
 
 			if (!empty($this->_crumbs) || !empty($btnbar))
 			{
-				echo $this->Html->div('bc');
+				echo $this->Html->div('bar');
 					echo (!empty($btnbar) && is_string($btnbar))
 						? $this->Html->div('btnbar', $btnbar)
 						: null;
@@ -81,7 +85,7 @@ echo $this->Grid->open();
 						: null;
 
 					echo (!empty($this->_crumbs))
-						? $this->Html->nestedList($this->getCrumbs())
+						? $this->Html->nestedList($this->getCrumbs(), array('class' => 'bc'))
 						: null;
 
 				echo $this->Html->tag('/div'); //div.bc

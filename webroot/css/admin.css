@@ -8,6 +8,10 @@ h1, h2 {
 	margin: 0 0 0 6px;
 }
 
+h1 {
+	font-size: 2.8em;
+}
+
 p { padding: 0; margin: 0 10px 4px 8px; }
 
 div.navbar {
@@ -89,7 +93,7 @@ div.navbar ul li.search input {
 	width: 168px;
 }
 
-div.navbar ul li.search input:focus { outline: none; }
+div.navbar ul li input:focus { outline: none; }
 
 /* right floating ul in navbar */
 div.navbar ul.right {
@@ -115,7 +119,7 @@ div.navbar ul.right li:last-child a {
 
 
 /* breadcrump */
-div.bc {
+div.bar {
 	font: 11px Arial, Helvetica, sans-serif;
 	text-shadow: -1px -1px 0 rgba(220, 220, 220, 0.9);
 	background: url('../img/bc_bg.png') repeat-x; 
@@ -127,20 +131,37 @@ div.bc {
 	margin: 0;
 	padding: 0;
 }
-div.bc ul {
-	width: 100%;
-}
-div.bc ul li {
+div.bar input:focus { outline: none; }
+
+div.bar ul li {
 	list-style-type: none;
 	float: left;
-	padding-left: 10px;
 	color: #454545;
 }
-div.bc ul li:first-child {
+div.bar ul.bc li {
+	padding-left: 10px;
+}
+div.bar div.btnbar ul li {
+	border-left: 1px solid #cacaca;
+}
+div.bar ul.bc li:first-child {
 	padding-left: 50px;
 	background: transparent url('../img/bc_home.png') 10px no-repeat;
 }
-div.bc ul li a {
+div.bar ul li a {
+	color: #454545;
+	height: 30px;
+	display: block;
+	padding-right: 15px;
+	text-decoration: none;
+}
+div.bar div.btnbar ul li a {
+	padding-left: 10px;
+}
+div.bar ul li a img {
+	margin: -4px 3px 0 3px;
+}
+div.bar ul.bc li a {
 	color: #454545;
 	height: 30px;
 	display: block;
@@ -148,7 +169,7 @@ div.bc ul li a {
 	padding-right: 15px;
 	text-decoration: none;
 }
-div.bc ul li a:hover {
+div.bar ul li a:hover {
 	color: #000;
 }
 
@@ -197,6 +218,8 @@ div.caption {
 	margin: 0;
 	padding: 0;
 }
+
+	div.caption input:focus { outline: none; }
 
 	div.caption h2 {
 		font-size: 14px;
