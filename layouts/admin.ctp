@@ -9,6 +9,7 @@
 	echo $this->Html->css(array(
 		'/flour/css/blueprint',
 		'admin.css',
+		'admin.form.css',
 		'/flour/css/tipsy',
 		'/flour/css/ui-lightness/jqueryui'
 	));

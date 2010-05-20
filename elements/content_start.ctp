@@ -13,6 +13,10 @@ $breadcrumb = (isset($breadcrumb))
 	? $breadcrumb
 	: true;
 
+$btnbar = (isset($btnbar))
+	? $btnbar
+	: '';
+
 $width = (isset($width))
 	? $width
 	: 'full';
@@ -25,9 +29,22 @@ echo $this->Grid->open();
 	if($width == 'full')
 	{
 
-		if($breadcrumb)
+		if (!empty($this->_crumbs) || !empty($btnbar))
 		{
-			echo $this->Html->div('bc', $this->Html->nestedList($this->getCrumbs()));
+			echo $this->Html->div('bc');
+				echo (!empty($btnbar) && is_string($btnbar))
+					? $this->Html->div('btnbar', $btnbar)
+					: null;
+
+				echo (!empty($btnbar) && is_array($btnbar))
+					? $this->Html->nestedList($btnbar)
+					: null;
+
+				echo (!empty($this->_crumbs))
+					? $this->Html->nestedList($this->getCrumbs())
+					: null;
+
+			echo $this->Html->tag('/div'); //div.bc
 		}
 
 		echo $this->Html->div('box');
@@ -52,9 +69,22 @@ echo $this->Grid->open();
 	
 		echo $this->Grid->span(24 - $width);
 
-			if($breadcrumb)
+			if (!empty($this->_crumbs) || !empty($btnbar))
 			{
-				echo $this->Html->div('bc', $this->Html->nestedList($this->getCrumbs()));
+				echo $this->Html->div('bc');
+					echo (!empty($btnbar) && is_string($btnbar))
+						? $this->Html->div('btnbar', $btnbar)
+						: null;
+
+					echo (!empty($btnbar) && is_array($btnbar))
+						? $this->Html->nestedList($btnbar)
+						: null;
+
+					echo (!empty($this->_crumbs))
+						? $this->Html->nestedList($this->getCrumbs())
+						: null;
+
+				echo $this->Html->tag('/div'); //div.bc
 			}
 
 		echo $this->Grid->end();

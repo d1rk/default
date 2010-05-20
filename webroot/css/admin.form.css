@@ -1,0 +1,22 @@
+	div.items {
+		height: 500px;
+		overflow: auto;
+		border: 1px solid #ccc;
+		clear: both;
+		background: #fff;
+	}
+
+	div.items div.item {
+		border-left: 4px solid #e6e6e6;
+		clear: both;
+		
+		}
+
+	div.items div.item.hover {
+		background: #E5ECF9;
+		}
+
+div.input {
+	padding: 4px;
+	}
+
