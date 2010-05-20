@@ -150,6 +150,7 @@ div.bar ul.bc li:first-child {
 }
 div.bar ul li a {
 	color: #454545;
+	text-shadow: -1px -1px 0 rgba(220, 220, 220, 0.9);
 	height: 30px;
 	display: block;
 	padding-right: 15px;
@@ -172,7 +173,26 @@ div.bar ul.bc li a {
 div.bar ul li a:hover {
 	color: #000;
 }
-
+div.bar div.btnbar ul li button {
+	color: #454545;
+	text-shadow: -1px -1px 0 rgba(220, 220, 220, 0.9);
+	padding-left: 10px;
+	background: transparent;
+	border: 0;
+	cursor: pointer;
+}
+div.bar div.btnbar ul li button img {
+	float: left;
+	margin: 2px 3px 0 3px;
+}
+div.bar div.btnbar ul li button span.ui-button-text {
+	float: left;
+	display: block;
+	margin: 4px 3px 0 2px;
+}
+div.bar div.btnbar ul li button:hover {
+	color: #000;
+}
 
 
 
