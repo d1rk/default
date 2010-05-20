@@ -1,0 +1,77 @@
+/* Tables */
+table {
+	background: #fff;
+	clear: both;
+	color: #333;
+	margin-bottom: 10px;
+	width: 100%;
+	border: 0;
+}
+table tr th {
+	text-align: center;
+}
+table tr th a {
+	display: block;
+	padding: 2px 4px;
+	text-decoration: none;
+}
+table tr th a:hover { 
+	color: #444;
+	background: #ccc;
+	text-decoration: none;
+}
+table tr td {
+	background: #fff;
+	border-right: 1px solid #ccc;
+	padding: 4px;
+	vertical-align: top;
+}
+table tr td.actions {
+	text-align: center;
+	white-space: nowrap;
+}
+table tr td.actions a {
+	margin: 0px 4px;
+	text-decoration: none;
+}
+table tr td.actions a img {
+	margin: 0px 2px;
+}
+.cake-sql-log table {
+	background: #f4f4f4;
+}
+.cake-sql-log td {
+	padding: 4px 8px;
+	text-align: left;
+}
+
+
+
+	th {
+		font-weight: normal;
+		background: transparent url('../img/bc_bg.png') repeat-x bottom;
+		color: #454545;
+		line-height: 19px;
+		border-bottom: 1px solid #BCC2C7;
+		}
+
+	th img {
+		padding: 1px 0 2px 0;
+	}
+
+	td {
+		padding: 4px 4px 4px 5px;
+		}
+
+	td.small {
+		padding: 3px 6px 3px 4px;
+		}
+    
+	tr {  }
+	tr.hover { background-color: #E5ECF9; }
+	tr.hover td.actions ul { visibility: visible; }
+	caption { background-color: #eee; }
+    
+	table tr th,
+	table tr th a { color: #454545 !important; text-decoration: none;}
+	table tr th a:hover { color: #000 !important; }

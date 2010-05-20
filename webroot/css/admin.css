@@ -203,7 +203,7 @@ div.box h1 { margin: 6px 10px 4px 8px; }
 div.caption {
 	font-family: Arial, Helvetica, sans-serif;
 	color: #dedede;
-	text-shadow:0 1px 0 rgba(0, 0, 0, 0.3);
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
 	background: transparent url('../img/bc_bg.png') repeat-x; 
 	background: #787878;
 	background: transparent url('../img/navbar.png') bottom repeat-x; 
@@ -228,6 +228,17 @@ div.caption {
 		font-weight: 100;
 		margin-top: 2px;
 	}
+
+	div.caption a {
+		color: #dedede;
+		text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+	}
+
+	div.caption a:hover {
+		color: #fff;
+		text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+	}
+	
 
 
 div.box div.footer {

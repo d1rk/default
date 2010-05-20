@@ -17,13 +17,45 @@ $link = array('controller' => 'tags', 'action' => 'index');
 $active = (stristr($this->here, Router::url($link))) ? 'active' : '';
 $nav[] = $this->Html->link( __('Tags', true), $link, array('class' => $active));
 
+	$this->Nav->add('Main', array(
+		'name' => __('Agenturen', true),
+		'url' => array('controller' => 'agencies', 'action' => 'index', 'admin' => true),
+		'type' => 'html',
+	));
+
+	$this->Nav->add('Main', array(
+		'name' => __('Kontakte', true),
+		'url' => array('controller' => 'contacts', 'action' => 'index', 'admin' => true),
+		'type' => 'html',
+	));
+	
+	$this->Nav->add('Main', array(
+		'name' => __('Quellen', true),
+		'url' => array('controller' => 'sources', 'action' => 'index', 'admin' => true),
+		'type' => 'html',
+	));
+
+	$this->Nav->add('Main', array(
+		'name' => __('Items', true),
+		'url' => array('controller' => 'items', 'action' => 'index', 'admin' => true),
+		'type' => 'html',
+	));
+
+	$this->Nav->add('Main', array(
+		'name' => __('Tags & Suchbegriffe', true),
+		'url' => array('controller' => 'tags', 'action' => 'index', 'admin' => true),
+		'type' => 'html',
+	));
+
+
+$nav = $this->Nav->show('Main');
+
 echo $this->Grid->open();
 
-echo $this->Html->div('navbar', 
-	$this->Html->nestedList($nav, array('class' => 'right')).
-	$this->Html->nestedList($nav)
-
-);
+echo $this->Html->div('navbar', $nav);
+#	$this->Html->nestedList($nav, array('class' => 'right')).
+#	$this->Html->nestedList($nav)
+#);
 
 echo $this->Grid->close();
 ?>

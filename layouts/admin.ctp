@@ -10,6 +10,7 @@
 		'/flour/css/blueprint',
 		'admin.css',
 		'admin.form.css',
+		'admin.table.css',
 		'/flour/css/tipsy',
 		'/flour/css/ui-lightness/jqueryui'
 	));
