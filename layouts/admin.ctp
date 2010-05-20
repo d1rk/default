@@ -8,8 +8,7 @@
 
 	echo $this->Html->css(array(
 		'/flour/css/blueprint',
-		'/flour/css/cake.generic',
-		'/flour/css/admin.form',
+		'admin.css',
 		'/flour/css/tipsy',
 		'/flour/css/ui-lightness/jqueryui'
 	));
