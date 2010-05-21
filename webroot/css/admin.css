@@ -12,6 +12,15 @@ h1 {
 	font-size: 2.8em;
 }
 
+h2 {
+	font-size: 2.2em;
+}
+
+h3 {
+	font-size: 2em;
+	padding: 10px 10px 6px 6px;
+}
+
 p { padding: 0; margin: 0 10px 4px 8px; }
 
 div.navbar {
