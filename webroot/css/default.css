@@ -1,0 +1,37 @@
+#flashMessage,
+.flasher {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0px;
+	color: #333;
+	text-align: center;
+	padding: 20px 0;
+	background: #fff;
+	border-bottom: 4px solid #ccc;
+	font-size: 150%;
+	z-index: 3;
+	opacity: 0.8;
+	}
+
+	#flashMessage small,
+	.flasher small {
+		font-size: 70%;
+		}
+
+	#flashMessage p,
+	.flasher p {
+		margin: 0;
+		padding: 0;
+		}
+
+	.success {
+		background: #BDE1B6;
+		border-color: #82BD6C;
+		}
+
+	.error {
+		background: #E1BDB6;
+		border-color: #BD826C;
+		}
+

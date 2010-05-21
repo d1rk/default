@@ -8,6 +8,7 @@
 
 	echo $this->Html->css(array(
 		'/flour/css/blueprint',
+		'default.css',
 		'admin.css',
 		'admin.form.css',
 		'admin.table.css',
