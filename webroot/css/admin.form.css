@@ -19,7 +19,257 @@
 		background-color: #FDEEB7;
 		}
 
+div.panel {
+	padding: 0;
+	margin-bottom: 20px;
+	-moz-box-shadow:0 0 3px #AAAAAA;
+	-webkit-box-shadow:0 0 3px #AAAAAA;
+	box-shadow:0 0 3px #AAAAAA;
+	
+	-moz-border-radius-bottomleft:4px;
+	-webkit-border-bottom-left-radius:4px;
+	border-bottom-left-radius:4px;
+	
+	-moz-border-radius-bottomright:4px;
+	-webkit-border-bottom-right-radius:4px;
+	border-bottom-right-radius:4px;
+	
+	border: 1px solid #fff;
+	}
+
+form .full {
+	width: 98%;
+	}
+
+form .half {
+	width: 64%;
+	}
+
+form .third {
+	width: 44%;
+	}
+
+form .big {
+	font-size: 200%;
+	padding: 4px;
+	}
+
 div.input {
 	padding: 4px;
 	}
 
+	div.input label {
+		color: #5C5C5C;
+		font-size: 100%;
+		line-height: 150%;
+		font-weight: normal;
+		display: block;
+		float: left;
+		width: 140px;
+		}
+
+/*
+		div.input span,
+		div.input small {
+			float: right;
+			position: relative;
+			top: 3px;
+		}
+*/
+	/*	div.input span { font-size: 86%; top: 0px; } */
+
+		div.input.checkbox span,
+		div.input.checkbox small {
+			top: -16px;
+			}
+
+		div.input label small,
+		div.input.textarea label small {
+			display: block;
+			margin: 8px 5px 0px 5px;
+			color: #999;
+			line-height: 120%;
+			font-weight: normal;
+			}
+
+		/* hide small, if not active */
+		div.input span,
+		div.input small,
+		div.input label small,
+		div.input.textarea label small {
+			/* visibility: hidden; */
+			}
+
+		div.input.active span,
+		div.input.active small,
+		div.input.active label small,
+		div.input.textarea.active label small {
+			visibility: visible;
+			color: #777;
+			}
+
+	/* CHECKBOX */
+	div.input.checkbox {
+		}
+
+	div.input.checkbox input {
+		padding: 0;
+		line-height: 10px;
+		margin-left: 140px;
+		}
+
+		div.input.checkbox input.full {
+			margin: 0 0 0 5px;
+			padding: 0;
+			width: 10px;
+			}
+
+	div.input.checkbox label {
+		position: relative;
+		top: -2px;
+		float: none;
+		display: inline;
+		font-weight: normal;
+		margin-left: 8px;
+		}
+
+	/* RADIO */
+	div.radiorow {
+		}
+
+	div.input.radio {
+		}
+
+	div.input.radio input {
+		margin: 0 0 0 5px;
+		padding: 0;
+		width: 10px;
+		}
+
+		div.input.radio input.full {
+			margin: 0 0 0 5px;
+			padding: 0;
+			width: 10px;
+			}
+
+	div.input.radio label {
+		position: relative;
+		top: -2px;
+		float: none;
+		display: inline;
+		line-height: 180%;
+		font-weight: normal;
+		margin-left: 8px;
+		white-space: nowrap;
+		}
+
+		div.input.radio label {
+			}
+
+	/* REQUIRED */
+	div.required label {
+		font-weight: bold;
+		}
+
+	div.required label small {
+		font-weight: normal;
+		}
+
+
+/* FIELDSET */
+fieldset {
+	border: 1px solid #ccc;
+	background-color: #eaeaea;
+	}
+
+fieldset legend {
+	color: #545454;
+	padding: 3px;
+	margin-left: 5px;
+	}
+
+fieldset div.legend {
+	color: #545454;
+	width: auto;
+	padding: 5px;
+	font-weight: bold;
+	}
+
+
+input, 
+textarea, 
+select {
+	font-family: Verdana, Arial, sans-serif;
+	color: #545454;
+	border: 1px solid #ccc;
+	background: #fafafa;
+	margin: 0 0 4px 0;
+	outline: none;
+	}
+
+	div.input.active {
+		background-color: #FDEEB7;
+		}
+
+	div.input.active input, 
+	div.input.active textarea, 
+	div.input.active select {
+		border: 1px solid #aaa;
+		color: #000;
+		background: #fff;
+		}
+
+		div.input.error {
+			background-color: #fbe3e4;
+		}
+
+		div.input.error input, 
+		div.input.error textarea, 
+		div.input.error select {
+			border: 1px solid #f00;
+			background: #fff;
+			}
+
+	input{
+		padding: 2px;
+	}
+
+	textarea {
+		font-family: "Lucida Grande", Tahoma, Arial, sans-serif;
+		padding: 2px;
+		height: 160px;
+		}
+
+	textarea.full {
+		font-size: 120%;
+		height: 260px;
+		}
+
+	textarea.low {
+		height: 120px; 
+		}
+
+	select.select {
+		font-family: "Lucida Grande", Tahoma, Arial, sans-serif;
+		margin: 1px 0;
+		padding: 1px 0 0 0;
+	}
+
+	input.hidden {
+		display: none;
+		border:0;
+		margin:0;
+		padding:0;
+		}
+
+	input.currency{
+		text-align: right;
+	}
+
+input.checkbox, 
+input.radio {
+	border: 0;
+	margin: 0;
+	width: 15px;
+	height: 15px;
+}
