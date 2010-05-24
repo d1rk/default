@@ -1,0 +1,12 @@
+#footer {
+	margin-top: 110px;
+	text-align: center;
+	color: #6e6e6e;
+}
+
+#copyright {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding: 6px 10px;
+}
