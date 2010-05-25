@@ -231,11 +231,9 @@ div.box h1 { margin: 6px 10px 4px 8px; }
 
 div.caption {
 	font-family: Arial, Helvetica, sans-serif;
-	color: #dedede;
+	color: #000;
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
-	background: transparent url('../img/bc_bg.png') repeat-x; 
-	background: #787878;
-	background: transparent url('../img/navbar.png') bottom repeat-x; 
+	background: transparent url('../img/bg_bar.png') bottom repeat-x; 
 	-moz-box-shadow:0 0 3px #AAAAAA;
 	-webkit-box-shadow:0 0 3px #AAAAAA;
 	box-shadow:0 0 3px #AAAAAA;
@@ -248,19 +246,31 @@ div.caption {
 	padding: 0;
 }
 
+div.caption.blue {
+	color: #dedede;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+	background: #787878;
+	background: transparent url('../img/navbar.png') bottom repeat-x; 
+	}
+
 	div.caption input:focus { outline: none; }
 
 	div.caption h2 {
-		font-size: 14px;
+		font-size: 18px;
 		line-height: 32px;
 		color: #fff;
 		font-weight: 100;
 		margin-top: 2px;
 	}
 
-	div.caption a {
+	div.caption a.blue {
 		color: #dedede;
 		text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+	}
+
+	div.caption a {
+		color: #000;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
 	}
 
 	div.caption a:hover {
@@ -279,6 +289,41 @@ div.box div.btnbar {
 
 }
 
+
+/* filters */
+div.filter {
+	padding: 0 10px;
+	margin: 0 auto;
+	}
+
+	div.filter ul { list-style: none; }
+	div.filter ul li { display: inline-block; margin-right: 6px; }
+
+	div.filter ul li a {
+		font-size: 11px;
+		color: #dedede;
+		text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		background: transparent;
+		display: inline;
+		padding: 3px 10px;
+		text-decoration: none;
+	}
+
+	div.filter ul li a.active {
+		font-size: 11px;
+		color: #dedede;
+		text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		background: #585858;
+		display: inline;
+		padding: 3px 10px;
+		text-decoration: none;
+	}
 
 
 
