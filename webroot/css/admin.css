@@ -193,7 +193,7 @@ div.bar div.btnbar ul li a {
 	background: transparent url('../img/bc_bg.png') 0 -10px repeat;
 }
 div.bar div.btnbar ul li a:hover {
-	background: transparent url('../img/bc_bg.png') 0 -15px repeat;
+	background: transparent url('../img/bc_bg.png') bottom repeat;
 }
 div.bar div.btnbar ul li {
 	margin: 0;
