@@ -213,12 +213,12 @@ div.bar div.btnbar ul li button:hover {
 }
 div.bar div.btnbar ul li button img {
 	float: left;
-	margin: 2px 3px 0 3px;
+	margin: 0px 3px 0 3px;
 }
 div.bar div.btnbar ul li button span.ui-button-text {
 	float: left;
 	display: block;
-	margin: 4px 3px 0 2px;
+	margin: 1px 3px 0 2px;
 }
 div.bar div.btnbar ul li button:hover {
 	color: #000;
