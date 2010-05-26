@@ -27,6 +27,9 @@ p { padding: 0; margin: 0 10px 4px 8px; }
 a:focus, a:hover { color: #025; text-decoration: underline; }
 a { color: #058; text-decoration: none; }
 
+a, a:focus, a:active, a:visited {
+   outline: none;
+}
 
 /* navbar (topmost) */
 
@@ -335,8 +338,6 @@ div.filter {
 
 
 
-
-
 div.btnbar {
 	float: right;
 	}
@@ -345,37 +346,42 @@ div.btnbar {
 	div.btnbar ul li { display: inline-block; margin-right: 6px; }
 
 
-
 /* Paginator TODO: overhaul */
 div.paginator {
+    padding:1em;
+    }
+
+div.paginator .btnbar {
 	font-size: 100%;
+	line-height:18px;
 	font-weight: normal;
-	padding: 1px;
-	}
-
-	div.paginator span {
-		margin: 0 2px;
-	}
-
-	div.paginator span.current {
-		color: #777;
-		margin: 0 2px;
 	}
 	
-	div.paginator img {
-		position: relative;
-		top: 1px;
-		vertical-align:top;
+	div.paginator div.btnbar ul li {
+	    display:inline;
+	    margin:0;
+	    padding:0;
+	}
+	
+	div.paginator .btnbar li {
+	    height:16px;
+	    width:20px;
+	}
+	
+	div.paginator .btnbar li a,
+	div.paginator .btnbar li.current {
+        padding:0 0.3em;
+	}
+	
+	div.paginator .btnbar li.img a {
+	    padding:0;
+	}
+	
+	div.paginator .btnbar img {
+        vertical-align:top;
 	}
 
-	div.paginator span.img span {
-		padding: 0;
-	}
-
-	div.paginator span.img a {
-		padding: 3px 0 0 0;
-	}
-
-	div.paginator span a {
-		padding: 2px 4px;
+	div.paginator .btnbar li.current {
+		color: #555;
+		font-weight:bold;
 	}
