@@ -180,7 +180,12 @@ div.input {
 /* FIELDSET */
 fieldset {
 	border: 1px solid #ccc;
-	background-color: #eaeaea;
+	box-shadow: inset 0px 2px 4px rgba(0,0,0,0.4);
+	-webkit-box-shadow: inset 0px 2px 4px rgba(0,0,0,0.4);
+	-moz-box-shadow: inset 0px 2px 4px rgba(0,0,0,0.4);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
 	}
 
 fieldset legend {
