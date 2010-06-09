@@ -10,3 +10,22 @@
 	right: 0;
 	padding: 6px 10px;
 }
+
+dl {
+    padding:5px;
+    margin-bottom:0.5em;
+}
+
+dl dt {
+    clear:left;
+    display:block;
+    float:left;
+    width:100px;
+    padding: 2px 0;
+}
+
+dl dd {
+    display:block;
+    float:left;
+    padding: 2px 0;
+}
