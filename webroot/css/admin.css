@@ -19,10 +19,10 @@ h2 {
 
 h3 {
 	font-size: 2em;
-	padding: 10px 10px 6px 6px;
+	padding: 10px 10px 6px 10px;
 }
 
-p { padding: 0; margin: 0 10px 4px 8px; }
+p { padding: 0; margin: 0 10px 4px 10px; }
 
 a:focus, a:hover { color: #025; text-decoration: underline; }
 a { color: #058; text-decoration: none; }
@@ -399,3 +399,28 @@ div.paginator .btnbar {
 		color: #555;
 		font-weight:bold;
 	}
+
+/* Definition Lists */
+
+dl {
+    padding:0px 10px 4px 10px;
+    margin-bottom:0.5em;
+}
+
+dl dt {
+    clear:left;
+    display:block;
+    float:left;
+    width:100px;
+    padding: 2px 0;
+}
+
+dl dd {
+    display:block;
+    float:left;
+    padding: 2px 0;
+}
+
+.btnbar .ibutton-container {
+    margin:2px;
+}
