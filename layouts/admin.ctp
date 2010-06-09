@@ -14,6 +14,7 @@
 		'admin.form.css',
 		'admin.table.css',
 		'/flour/css/tipsy',
+		'/flour/css/ibutton',
 		'/flour/css/ui-lightness/jqueryui'
 	));
 	echo $this->Html->script(array(
@@ -21,6 +22,7 @@
 		'/flour/js/jquery/jqueryui',
 		'/flour/js/jquery/form',
 		'/flour/js/jquery/tipsy',
+		'/flour/js/jquery/ibutton',
 		'/flour/js/jquery/blockui',
 		'/flour/js/init'
 	));
