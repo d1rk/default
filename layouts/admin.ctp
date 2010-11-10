@@ -13,18 +13,18 @@
 		'admin.css',
 		'admin.form.css',
 		'admin.table.css',
-		'/flour/css/tipsy',
-		'/flour/css/ibutton',
-		'/flour/css/ui-lightness/jqueryui'
+		'tipsy',
+		'ibutton',
+		'ui-lightness/jqueryui'
 	));
 	echo $this->Html->script(array(
-		'/flour/js/jquery/jquery',
-		'/flour/js/jquery/jqueryui',
-		'/flour/js/jquery/form',
-		'/flour/js/jquery/tipsy',
-		'/flour/js/jquery/ibutton',
-		'/flour/js/jquery/blockui',
-		'/flour/js/init'
+		'/flour/js/jquery',
+		'/flour/js/jquery.ui',
+		'/flour/js/jquery.form',
+		'/flour/js/jquery.tipsy',
+		'/flour/js/jquery.blockui',
+		'ibutton',
+		'init'
 	));
 
 	echo $scripts_for_layout;

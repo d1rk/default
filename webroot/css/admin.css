@@ -228,8 +228,21 @@ div.bar div.btnbar ul li button:hover {
 }
 
 
+div.bar div.bc {
+	
+}
 
+div.bar div.bc > a {
+	color: #454545;
+	height: 30px;
+	display: block;
+	background: transparent url('../img/bc_sep.png') right no-repeat;
+	padding-right: 15px;
+	text-decoration: none;
+	display: block;
+	padding-left: 10px;
 
+}
 
 /* content boxes */
 
@@ -280,12 +293,14 @@ div.caption.blue {
 
 	div.caption input:focus { outline: none; }
 
-	div.caption h2 {
+	div.caption h2,
+	div.caption h3 {
 		font-size: 18px;
 		line-height: 32px;
 		color: #fff;
 		font-weight: 100;
 		margin-top: 2px;
+		padding: 0 0 0 10px;
 	}
 
 	div.caption a.blue {

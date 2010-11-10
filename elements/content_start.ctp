@@ -44,9 +44,10 @@ echo $this->Grid->open();
 					? $this->Html->nestedList($btnbar)
 					: null;
 
-				echo (!empty($this->_crumbs))
-					? $this->Html->nestedList($this->getCrumbs(), array('class' => 'bc'))
-					: null;
+				echo $this->Html->div('bc', $this->Html->getCrumbs());
+				// echo (!empty($this->_crumbs))
+				// 	? $this->Html->nestedList($this->Html->getCrumbs(), array('class' => 'bc'))
+				// 	: null;
 
 			echo $this->Html->tag('/div'); //div.bc
 		}
@@ -84,9 +85,10 @@ echo $this->Grid->open();
 						? $this->Html->nestedList($btnbar)
 						: null;
 
-					echo (!empty($this->_crumbs))
-						? $this->Html->nestedList($this->getCrumbs(), array('class' => 'bc'))
-						: null;
+					echo $this->Html->div('bc', $this->Html->getCrumbs());
+					// echo (!empty($this->_crumbs))
+					// 	? $this->Html->nestedList($this->Html->getCrumbs(), array('class' => 'bc'))
+					// 	: null;
 
 				echo $this->Html->tag('/div'); //div.bc
 			}
