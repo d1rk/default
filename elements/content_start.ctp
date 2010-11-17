@@ -28,7 +28,7 @@ $width = (isset($width))
 $this->name = $this->title;
 
 
-echo $this->Grid->open();
+echo $this->Html->div('container');
 
 	if($width == 'full')
 	{
@@ -64,15 +64,15 @@ echo $this->Grid->open();
 		echo $this->Html->tag('/div'); //div.box
 
 	} else {
-		
-		echo $this->Grid->span($width);
+
+		echo $this->Html->div('span-'.$width);
 			if(!empty($this->title))
 			{
 				echo $this->Html->tag('h1', $this->title);
 			}
-		echo $this->Grid->end();
-	
-		echo $this->Grid->span(24 - $width);
+		echo $this->Html->tag('/div'); //div.span-
+
+		echo $this->Html->div('span-'.(24 - $width));
 
 			if (!empty($this->_crumbs) || !empty($btnbar))
 			{
@@ -93,7 +93,7 @@ echo $this->Grid->open();
 				echo $this->Html->tag('/div'); //div.bc
 			}
 
-		echo $this->Grid->end();
+		echo $this->Html->tag('/div'); //div.span-
 	}
 
 //TODO: show description
@@ -104,5 +104,5 @@ echo $this->Grid->open();
 		}
 	echo $this->Html->tag('/div'); //div.box
 */
-echo $this->Grid->close();
+echo $this->Html->tag('/div'); //div.container
 ?>
