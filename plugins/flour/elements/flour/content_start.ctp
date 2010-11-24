@@ -17,7 +17,7 @@ $btnbar = (isset($btnbar))
 	? $btnbar
 	: '';
 
-$btnbar = (empty($btnbar) && !empty($this->Nav->cNavis['Primary']))
+$btnbar = (empty($btnbar) && !empty($this->Nav->_cache['Primary']))
 	? $this->Nav->show('Primary')
 	: '';
 
@@ -44,11 +44,12 @@ echo '<div class="container">';
 					? $this->Html->nestedList($btnbar)
 					: null;
 
-				echo (!empty($this->_crumbs))
-					? $this->Html->nestedList($this->getCrumbs(), array('class' => 'bc'))
-					: null;
+				if($crumbs = $this->Html->getCrumbs())
+				{
+					echo $this->Html->div('bc', $this->Html->getCrumbs());
+				}
 
-			echo $this->Html->tag('/div'); //div.bc
+			echo $this->Html->tag('/div'); //div.bar
 		}
 
 		echo $this->Html->div('box');
@@ -64,14 +65,14 @@ echo '<div class="container">';
 
 	} else {
 		
-		echo $this->Grid->span($width);
+		echo $this->Html->div("span-$width");
 			if(!empty($this->title))
 			{
 				echo $this->Html->tag('h1', $this->title);
 			}
-		echo '</div>'; //div.span-
+		echo '</div>'; //div.span-$width
 	
-		echo $this->Grid->span(24 - $width);
+		echo $this->Html->div('span-'.(24 - $width));
 
 			if (!empty($this->_crumbs) || !empty($btnbar))
 			{
@@ -88,10 +89,10 @@ echo '<div class="container">';
 						? $this->Html->nestedList($this->getCrumbs(), array('class' => 'bc'))
 						: null;
 
-				echo $this->Html->tag('/div'); //div.bc
+				echo $this->Html->tag('/div'); //div.bar
 			}
 
-		echo '</div>'; //div.span-
+		echo '</div>'; //div.span-$width
 	}
 
 //TODO: show description
